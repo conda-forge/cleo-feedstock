@@ -1,8 +1,8 @@
 {% set name = "cleo" %}
-{% set version = "0.6.8" %}
+{% set version = "0.7.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "85a63076b72ca376fb06668be1fc7758dc16740b394783d5cc65200c4b32f71b" %}
+{% set hash_value = "3479588d0c1156b3a73168fd995cd93d23514baca2286740ed15171afa488498" %}
 
 package:
   name: '{{ name|lower }}'
