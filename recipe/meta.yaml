@@ -1,8 +1,8 @@
 {% set name = "cleo" %}
-{% set version = "0.6.8" %}
+{% set version = "0.7.6" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "85a63076b72ca376fb06668be1fc7758dc16740b394783d5cc65200c4b32f71b" %}
+{% set hash_value = "99cf342406f3499cec43270fcfaf93c126c5164092eca201dfef0f623360b409" %}
 
 package:
   name: '{{ name|lower }}'
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
