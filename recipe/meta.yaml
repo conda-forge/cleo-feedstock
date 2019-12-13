@@ -12,7 +12,7 @@ build:
   number: 0
   noarch: python
   script:
-    # we cannot use peotry to install cleo b/c poetry depends on cleo
+    # we cannot use poetry to install cleo b/c poetry depends on cleo
     - rm -f pyproject.toml
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
