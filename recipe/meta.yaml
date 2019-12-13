@@ -11,13 +11,16 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script:
+    # we cannot use peotry to install cleo b/c poetry depends on cleo
+    - rm -f pyproject.toml
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
-    - poetry >=1.0.0b2
+    # - poetry >=1.0.0b2
   run:
     - python
     - clikit >=0.4.0,<0.5.0
@@ -35,7 +38,7 @@ about:
   home: https://github.com/sdispater/cleo
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: Cleo allows you to create beautiful and testable command-line interfaces.
   description: Cleo allows you to create beautiful and testable command-line interfaces.
   dev_url: https://github.com/sdispater/cleo
