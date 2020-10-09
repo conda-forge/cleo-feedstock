@@ -5,9 +5,11 @@ Home: https://github.com/sdispater/cleo
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cleo-feedstock/blob/master/LICENSE.txt)
 
 Summary: Cleo allows you to create beautiful and testable command-line interfaces.
+
+Development: https://github.com/sdispater/cleo
 
 Cleo allows you to create beautiful and testable command-line interfaces.
 
@@ -122,4 +124,5 @@ Feedstock Maintainers
 * [@jdblischak](https://github.com/jdblischak/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@nick-youngblut](https://github.com/nick-youngblut/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 
