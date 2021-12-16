@@ -9,20 +9,18 @@ source:
   sha256: 3d0e22d30117851b45970b6c14aca4ab0b18b1b53c8af57bed13208147e4069f
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script:
-    # we cannot use poetry to install cleo b/c poetry depends on cleo
-    - rm -f pyproject.toml
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    # - poetry >=1.0.0b2
+    - poetry-core >=1.0.0a5
   run:
-    - python
+    - python >=3.6
     - clikit >=0.6.0,<0.7.0
 
 test:
@@ -56,3 +54,4 @@ extra:
     - jdblischak
     - cbrueffer
     - ocefpaf
+    - xylar
