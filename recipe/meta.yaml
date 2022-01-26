@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cleo/cleo-{{ version }}.tar.gz
-  sha256: bd2b961ea7ba92dd429e34d8f23e51d3e5fdc2d00346fe01c3c9fb736dd0611c
+  sha256: a103a065d031b7d936ee88a6b93086a69bd9c1b40fa2ebfe8c056285a66b481d
 
 build:
   number: 0
