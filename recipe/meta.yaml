@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: cleo
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cleo/cleo-{{ version }}.tar.gz
-  sha256: 3d0e22d30117851b45970b6c14aca4ab0b18b1b53c8af57bed13208147e4069f
+  sha256: fbc5cb141cbc31ea8ffd3d5cd67d3b183fa38aa5098fd37e39e9a953a232fda9
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
