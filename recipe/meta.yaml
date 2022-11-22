@@ -28,11 +28,6 @@ requirements:
 test:
   imports:
     - cleo
-    - cleo.commands
-    - cleo.commands.completions
-    - cleo.config
-    - cleo.io
-    - cleo.testers
   commands:
     - pip check
   requires:
