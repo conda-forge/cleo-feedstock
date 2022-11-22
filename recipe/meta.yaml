@@ -1,3 +1,4 @@
+{% set name = "cleo" %}
 {% set version = "1.0.0" %}
 
 package:
@@ -5,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/c/cleo/cleo-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cleo-{{ version }}.tar.gz
   sha256: bb5e4f70db83a597575ec86a1ed8fc56bd80934cfea3db97a23ea50c03b78382
 
 build:
@@ -16,12 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7,<4.0
     - pip
     - poetry-core >=1.0.0a5
   run:
-    - python >=3.6
-    - clikit >=0.6.0,<0.7.0
+    - python >=3.7,<4.0
+    - crashtest >=0.4.1,<0.5.0
+    - rapidfuzz >=2.2.0,<3.0.0
 
 test:
   imports:
@@ -37,11 +39,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/sdispater/cleo
+  home: https://github.com/python-poetry/cleo
+  summary: Cleo allows you to create beautiful and testable command-line interfaces.
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Cleo allows you to create beautiful and testable command-line interfaces.
   description: Cleo allows you to create beautiful and testable command-line interfaces.
   dev_url: https://github.com/sdispater/cleo
 
