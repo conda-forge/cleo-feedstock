@@ -1,7 +1,7 @@
 About cleo
 ==========
 
-Home: https://github.com/sdispater/cleo
+Home: https://github.com/python-poetry/cleo
 
 Package license: MIT
 
