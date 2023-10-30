@@ -1,5 +1,5 @@
 {% set name = "cleo" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: cleo
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cleo-{{ version }}.tar.gz
-  sha256: eb4b2e1f3063c11085cebe489a6e9124163c226575a3c3be69b2e51af4a15ec5
+  sha256: 0b2c880b5d13660a7ea651001fb4acb527696c01f15c9ee650f377aa543fd523
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.7,<4.0
     - crashtest >=0.4.1,<0.5.0
-    - rapidfuzz >=2.2.0,<3.0.0
+    - rapidfuzz >=3.0.0,<4.0.0
 
 test:
   imports:
