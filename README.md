@@ -1,11 +1,11 @@
-About cleo
-==========
+About cleo-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cleo-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-poetry/cleo
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cleo-feedstock/blob/main/LICENSE.txt)
 
 Summary: Cleo allows you to create beautiful and testable command-line interfaces.
 
