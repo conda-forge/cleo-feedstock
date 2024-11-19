@@ -1,5 +1,6 @@
+{% set python_min = "3.7" %}
 {% set name = "cleo" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: cleo
@@ -7,23 +8,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cleo-{{ version }}.tar.gz
-  sha256: 0b2c880b5d13660a7ea651001fb4acb527696c01f15c9ee650f377aa543fd523
+  sha256: d9db0fa3a194efb9caadfe1e718bf48cc48f08b7b1ee8381526ecc67c58856c4
 
 build:
   number: 0
   noarch: python
-  script:
-    - {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python {{ python_min }}
     - pip
-    - poetry-core >=1.1.0,<1.2.0
+    - poetry-core >=1.1.0
   run:
-    - python >=3.7,<4.0
-    - crashtest >=0.4.1,<0.5.0
-    - rapidfuzz >=3.0.0,<4.0.0
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +29,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
