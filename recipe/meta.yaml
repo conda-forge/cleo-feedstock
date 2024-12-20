@@ -1,6 +1,6 @@
 {% set python_min = "3.7" %}
 {% set name = "cleo" %}
-{% set version = "2.2.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: cleo
